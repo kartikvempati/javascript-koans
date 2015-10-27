@@ -107,15 +107,18 @@ describe("About Functions", function() {
       return a * b;
     };
     var answer = multiply.toString()  // This is a placeholder answer
-    expect(multiply.toString()).toBe(answer);
+    expect(multiply.toString()).toBe("function(a, b) {
+    //  // An internal comment
+    //  return a * b;
+    // };");
     // This is what I believe to be the actual answer for this test.
     // I checked it with the the console in Chrome as well, but for some reason
     // I am not able to pass on the tester. 
     //
-    // function(a, b) {
+    // "function(a, b) {
     //  // An internal comment
     //  return a * b;
-    // };
+    // };"
 
   });    
 });
